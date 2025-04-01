@@ -5,77 +5,77 @@
 @layer base {
   :root {
     --background: 0 0% 99%;
-    --foreground: 220 10% 10%;
+    --foreground: 20 10% 10%; /* Adjusted for orange theme */
 
     --card: 0 0% 100%;
-    --card-foreground: 220 10% 10%;
+    --card-foreground: 20 10% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 10% 10%;
+    --popover-foreground: 20 10% 10%;
 
-    --primary: 220 70% 40%; /* Modern dark blue */
+    --primary: 25 90% 55%; /* Vibrant orange */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 220 70% 40%; /* Updated to match primary */
+    --secondary: 20 40% 96.1%; /* Light complementary tone */
+    --secondary-foreground: 25 90% 55%; /* Matching vibrant orange */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 20 40% 96.1%;
+    --muted-foreground: 15 16.3% 46.9%;
 
-    --accent: 220 20% 93%;
-    --accent-foreground: 220 70% 40%; /* Updated to match primary */
+    --accent: 25 20% 93%; /* Light orange accent */
+    --accent-foreground: 25 90% 55%; /* Matching vibrant orange */
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 20 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 14.3 31.8% 91.4%;
+    --input: 14.3 31.8% 91.4%;
+    --ring: 25 90% 60%; /* Orange ring */
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 220 70% 40%; /* Updated to dark blue */
+    --sidebar-foreground: 20 5.3% 26.1%;
+    --sidebar-primary: 25 90% 55%; /* Vibrant orange for sidebar */
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 220 70% 40%; /* Updated to match primary */
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 20 4.8% 95.9%;
+    --sidebar-accent-foreground: 25 90% 55%; /* Matching vibrant orange */
+    --sidebar-border: 20 13% 91%;
+    --sidebar-ring: 25 91.2% 65%; /* Adjusted for orange */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 220 70% 50%; /* Slightly lighter dark blue for dark mode */
+    --background: 20 84% 4.9%; /* Darker orange-toned background */
+    --foreground: 20 40% 98%;
+    --card: 20 84% 4.9%;
+    --card-foreground: 20 40% 98%;
+    --popover: 20 84% 4.9%;
+    --popover-foreground: 20 40% 98%;
+    --primary: 25 90% 65%; /* Slightly lighter vibrant orange for dark mode */
     --primary-foreground: 0 0% 100%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --secondary: 17.2 32.6% 17.5%; /* Adjusted for dark mode */
+    --secondary-foreground: 20 40% 98%;
+    --muted: 17.2 32.6% 17.5%;
+    --muted-foreground: 15 20.2% 65.1%;
+    --accent: 17.2 32.6% 17.5%;
+    --accent-foreground: 20 40% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 220 70% 50%; /* Updated for dark mode */
+    --destructive-foreground: 20 40% 98%;
+    --border: 17.2 32.6% 17.5%;
+    --input: 17.2 32.6% 17.5%;
+    --ring: 25 26.8% 83.9%; /* Orange ring in dark mode */
+    --sidebar-background: 20 5.9% 10%;
+    --sidebar-foreground: 20 4.8% 95.9%;
+    --sidebar-primary: 25 90% 65%; /* Vibrant orange for dark mode sidebar */
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 20 3.7% 15.9%;
+    --sidebar-accent-foreground: 20 4.8% 95.9%;
+    --sidebar-border: 20 3.7% 15.9%;
+    --sidebar-ring: 25 91.2% 65%;
   }
 }
 
-/* Rest of the CSS remains the same */
+/* Rest of the CSS remains unchanged */
 @layer base {
   * {
     @apply border-border;
@@ -106,6 +106,8 @@
     @apply leading-relaxed text-base md:text-lg;
   }
 }
+
+/* Components and utilities remain unchanged */
 
 @layer components {
   .container-custom {
@@ -210,3 +212,30 @@ html {
 .animate-pulse-slow { animation: pulse-slow 4s infinite; }
 .animate-bounce-slow { animation: bounce-slow 2s infinite; }
 .animate-fade-up { animation: fade-up 0.8s ease-out; }
+
+/* index.css - Add these to your existing file */
+
+/* Enhanced page transitions */
+.page-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Scroll reveal for content within pages */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Add to your @layer components */
+@layer components {
+  .page-content {
+    @apply container-custom py-12 md:py-16;
+  }
+}
